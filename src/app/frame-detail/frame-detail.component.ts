@@ -20,7 +20,7 @@ export class FrameDetailComponent {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.frameId = parseInt(urlParameters['id']);
+      this.frameId = urlParameters['id'];
     });
     this.frame = this.frameService.getFrame(this.frameId);
   }

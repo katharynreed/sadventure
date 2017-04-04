@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToDetailPage(clickedFrame) {
-    this.router.navigate(['frames', clickedFrame.id]);
+    this.router.navigate(['frames', clickedFrame.$key]);
   }
 
 }
