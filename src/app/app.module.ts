@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { FrameDetailComponent } from './frame-detail/frame-detail.component';
 import { EditFrameComponent } from './edit-frame/edit-frame.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     FrameDetailComponent,
     EditFrameComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

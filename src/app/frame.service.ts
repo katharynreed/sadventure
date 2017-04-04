@@ -23,4 +23,8 @@ export class FrameService {
     frameEntryInFirebase.update({text: localUpdatedFrame.text});
   }
 
+  newFrame(newFrame: Frame) {
+    this.frames.push(newFrame);
+  }
+
 }
