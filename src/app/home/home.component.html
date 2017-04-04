@@ -1,0 +1,3 @@
+<ul>
+  <li *ngFor="let frame of frames | async" (click)="goToDetailPage(frame)">{{frame.text}}</li>
+</ul>

@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{(frame | async)?.text}}</h3>
+  </div>
+  <div class="panel-body">
+    <ul>
+      <li *ngFor="let choice of (frame | async)?.choices">{{choice[0]}}</li>
+    </ul>
+  </div>
+</div>
